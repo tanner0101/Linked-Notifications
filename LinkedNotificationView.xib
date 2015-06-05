@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LinkedNotificationView" customModule="Decode" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="369" height="88"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBC-Oy-9CE">
+                    <rect key="frame" x="0.0" y="0.0" width="369" height="88"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="mainButtonTouchCancel:" destination="iN0-l3-epB" eventType="touchCancel" id="HcH-N3-jYB"/>
+                        <action selector="mainButtonTouchDown:" destination="iN0-l3-epB" eventType="touchDown" id="TFg-aM-apQ"/>
+                        <action selector="mainButtonTouchUpInside:" destination="iN0-l3-epB" eventType="touchUpInside" id="gd9-JE-eMU"/>
+                        <action selector="mainButtonTouchUpOutside:" destination="iN0-l3-epB" eventType="touchUpOutside" id="jlC-PS-wQP"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="247" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZeF-0d-2JD">
+                    <rect key="frame" x="36" y="8" width="325" height="20"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.79999999999999982" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" text="Description" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9R-zI-apv">
+                    <rect key="frame" x="36" y="32" width="325" height="48"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iBeacon Notification Icon" translatesAutoresizingMaskIntoConstraints="NO" id="HFK-0d-TQQ">
+                    <rect key="frame" x="8" y="10" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="HFK-0d-TQQ" secondAttribute="height" multiplier="1:1" id="A8P-j5-4dK"/>
+                        <constraint firstAttribute="height" constant="20" id="yT2-cu-1r9"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="HFK-0d-TQQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="335-by-wCc"/>
+                <constraint firstItem="YBC-Oy-9CE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="6am-uS-O9p"/>
+                <constraint firstItem="ZeF-0d-2JD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="9cT-kB-Wb9"/>
+                <constraint firstItem="YBC-Oy-9CE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ADQ-hy-GOz"/>
+                <constraint firstItem="HFK-0d-TQQ" firstAttribute="top" secondItem="ZeF-0d-2JD" secondAttribute="top" constant="2" id="Cuo-gX-sAp"/>
+                <constraint firstAttribute="bottom" secondItem="Q9R-zI-apv" secondAttribute="bottom" constant="8" id="Hcp-DJ-Fpx"/>
+                <constraint firstItem="Q9R-zI-apv" firstAttribute="top" secondItem="ZeF-0d-2JD" secondAttribute="bottom" constant="4" id="JUw-Dc-P7U"/>
+                <constraint firstAttribute="trailing" secondItem="Q9R-zI-apv" secondAttribute="trailing" constant="8" id="KtC-iw-Dnw"/>
+                <constraint firstAttribute="bottom" secondItem="YBC-Oy-9CE" secondAttribute="bottom" id="T4a-uy-rb5"/>
+                <constraint firstItem="Q9R-zI-apv" firstAttribute="leading" secondItem="ZeF-0d-2JD" secondAttribute="leading" id="bNY-hh-JAl"/>
+                <constraint firstItem="ZeF-0d-2JD" firstAttribute="leading" secondItem="HFK-0d-TQQ" secondAttribute="trailing" constant="8" id="hf6-fg-oCN"/>
+                <constraint firstAttribute="trailing" secondItem="ZeF-0d-2JD" secondAttribute="trailing" constant="8" id="lZ0-d4-k7A"/>
+                <constraint firstAttribute="trailing" secondItem="YBC-Oy-9CE" secondAttribute="trailing" id="oPA-e8-npV"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="Q9R-zI-apv" id="yru-ZG-2sN"/>
+                <outlet property="iconImageView" destination="HFK-0d-TQQ" id="u2m-H2-FqC"/>
+                <outlet property="mainButton" destination="YBC-Oy-9CE" id="7Mg-Hs-TE4"/>
+                <outlet property="titleLabel" destination="ZeF-0d-2JD" id="hAD-vQ-7Wx"/>
+            </connections>
+            <point key="canvasLocation" x="167.5" y="108"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iBeacon Notification Icon" width="20" height="20"/>
+    </resources>
+</document>
