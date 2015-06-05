@@ -2,7 +2,7 @@
 
 Dynamic iOS style in-app notification system.
 
-As seeon in Decode on the App Store <https://itunes.apple.com/us/app/decode-simple-qr-reader/id964303354?mt=8>
+As seen on in Decode on the App Store <https://itunes.apple.com/us/app/decode-simple-qr-reader/id964303354?mt=8>
 
 ```swift
 var linkedNotifications = [LinkedNotification]()
