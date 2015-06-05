@@ -20,7 +20,7 @@ for (key, example) in examples {
 
 LinkedNotification.shared.update(linkedNotifications, superView: self.view, topView: self.statusBarView)
 ```
-Linked notifications will automatically re-arrange themselves as the underlying data model updates when `update` is called.
+Linked notifications will automatically re-arrange themselves as the underlying data model changes when `update` is called.
 
 ##Example Notification Model
 
