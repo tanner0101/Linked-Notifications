@@ -10,6 +10,11 @@ import UIKit
 private let _shared = LinkedNotification()
 class LinkedNotification {
 
+    //MARK: Initializers
+    init(id: String) {
+        self.id = id
+    }
+
     //MARK: Class functions
     class var shared: LinkedNotification {
         return _shared
